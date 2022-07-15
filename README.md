@@ -8,7 +8,7 @@
 
 ### :white_check_mark: My Portfolio Website
 
-Live Website: kendallweatherapp.netlify.app
+Live Website: http://kendallweatherapp.netlify.app
 
 After spending a week learning TypeScript with documentation, videos, and other learning resources, I created a Weather App with TypeScript and React, drawing data from Open Weather Map API. 
 
