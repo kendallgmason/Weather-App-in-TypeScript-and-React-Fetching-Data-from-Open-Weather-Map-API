@@ -1,8 +1,6 @@
 <p align="center">
-<img src="./portfolio/front page.png" style="width: 800px" />
-<img src="./portfolio/about page.png" style="width: 800px"/>
-<img src="./portfolio/portfolio page.png" style="width: 800px" />
-<img src="./portfolio/contact page.png" style="width: 800px" />
+<img src="./Weather App 1.png" style="width: 800px"/>
+<img src="./Weather App.png" style="width: 800px" />
 </p>
 
 </br></br>
