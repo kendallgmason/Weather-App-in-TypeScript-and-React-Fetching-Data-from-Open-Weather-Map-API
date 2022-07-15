@@ -8,9 +8,7 @@
 
 ### :white_check_mark: My Portfolio Website
 
-Live Website: https://kendallgcodes-portfolio.netlify.app/
-
-AWS Amplify Deployed version: https://main.d2jir1qrsgu5py.amplifyapp.com/
+Live Website: kendallweatherapp.netlify.app
 
 After spending a week learning TypeScript with documentation, videos, and other learning resources, I created a Weather App with TypeScript and React, drawing data from Open Weather Map API. 
 
@@ -59,3 +57,7 @@ Clone the repo @ https://github.com/kendallgmason/Weather-App-in-TypeScript-and-
 Then, mpm start in your console. 
 
 </br></br>
+
+### Usage
+
+Add the location you'd like the Weather Forecast for, it will then add that city to the list. Click on the city, it will highlight the city and then show you the current temperature and details, plus a 8 day forecast below it. 
