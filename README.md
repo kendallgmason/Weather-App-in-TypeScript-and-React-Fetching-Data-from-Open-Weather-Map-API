@@ -1,70 +1,63 @@
-# React/TypeScript Hackathon
+<p align="center">
+<img src="./portfolio/front page.png" style="width: 800px" />
+<img src="./portfolio/about page.png" style="width: 800px"/>
+<img src="./portfolio/portfolio page.png" style="width: 800px" />
+<img src="./portfolio/contact page.png" style="width: 800px" />
+</p>
 
-## Challenge
+</br></br>
 
-Build a weather checker app using TypeScript and React that satisfies all of the requirements below.
 
-## Core Requirements
+### :white_check_mark: My Portfolio Website
 
-### Planning and documentation
+Live Website: https://kendallgcodes-portfolio.netlify.app/
 
-- Before coding your app, you should use the draw.io VS code extension to create a component tree diagram within this repository.
-- Each component in the diagram should have details on the below (where relevant)
-  - state (if any)
-  - props (if any)
-  - behaviours (the different ways that the state is updated, if there is a state)
-- Your app should have a readme that describes its functionality and how it should be used. You can use a tool like [Readme.so](https://readme.so/editor) to help do this.
-- It's worth planning out your day into mini-sprints/chunks and collectively agree on what work can be completed during each sprint. That way if you spend too long on a particular problem, you can re-evaluate things as a team and potentially steer in another direction.
+AWS Amplify Deployed version: https://main.d2jir1qrsgu5py.amplifyapp.com/
 
-### Code and functionality
+After spending a week learning TypeScript with documentation, videos, and other learning resources, I created a Weather App with TypeScript and React, drawing data from Open Weather Map API. 
 
-- Your app should be in TypeScript! Remember to reference the [React/TypeScript cheat sheet](https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets) and other resources (and Google) to help.
-- The user should be able to input the name of a city and have weather information about that city added to the page. Use the following API to get your weather information: https://openweathermap.org/api. You'll need to sign up for the free tier to get an API key.
-- Your app should have at least one other function/feature in addition to being able to check weather information about a city. Be creative!
+</br></br>
 
-## Resources
+### :mortar_board: Main Learning Points:
 
-- [TypeScript in create-react-app](https://create-react-app.dev/docs/adding-typescript/)
-- [React/TypeScript cheat sheet](https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets)
-- [Example TypeScript app](https://github.com/JoselynDRF/react-redux-typescript-todolist)
+- First time using Typescript to build and provision a project, so learned to take it slow and study documentation/google when needed.
 
-## Bonus
+- How to use types and interfaces better. 
 
-Consider exploring (and possibly implementing) any of the below.
+- The value of component trees and knowing the flow of your app. 
 
-- UI/component libraries
+- How amazing TypeScript is! 
 
-  - A way to speed up development and bring consistency to how your app looks (with pre-made customisable components)
-  - Practice one you've used before or try a new one; up to you and your team!
+- Learned about breaking the problem down, planning and tackling one bit of the app at a time. 
 
-- React Router
-  - A way to add multiple pages to your app: https://reactrouter.com/docs/en/v6
-- CSS modules
-  - A handy feature supported by Create React App, which allows you to scope CSS rules to just a component: https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
-  - This is a good idea, as it ensure that one component's CSS rules don't affect another, even if they happen to use the same class names)
-- Animation libraries
+- Make sure to console log a lot and read errors/ not be afraid of them when they come up. 
 
-  - A way to add animation and motion to your app: https://blog.logrocket.com/best-react-animation-library-top-7-libraries-compared/
-  - It's also a good idea to read up motion/animation from an accessibility perspective too: https://web.dev/prefers-reduced-motion/
+</br></br>
 
-- Conditional CSS classes
+### :hammer: Built with:
 
-  - A handy way of conditionally applying CSS classes (without having to resort to messy conditional string concatenation/interpolation in JS/TS): https://www.npmjs.com/package/clsx
+TypeScript
+React
+Javascript
+Bootstrap
+SCSS
 
-- Tests
+### :checkered_flag: Getting Started:
 
-  - Practice writing tests in TypeScript whilst also getting some confidence that the important parts of your app behave correctly.
-  - Might be helpful (starting from "Testing a Basic Component"): https://www.pluralsight.com/guides/how-to-test-react-components-in-typescript#module-testingabasiccomponent
+Clone the repo as instructed below
 
-- Forms
-  - A way to add forms to an app and simplify many of the details: https://react-hook-form.com/
+</br></br>
 
----
+### Prerequisites:
 
-If you get errors regarding missing types for the NPM packages that you're trying to use in your TypeScript application, use these as a starting point:
+No prerequisites
 
-- https://www.w3schools.com/typescript/typescript_definitely_typed.php
+</br></br>
 
-- https://stackoverflow.com/a/39907679
+### Installation
 
-It's also worth searching that package's documentation/website for "TypeScript", in case it contains any direct guidance on how to use their package with TypeScript.
+Clone the repo @ https://github.com/kendallgmason/Weather-App-in-TypeScript-and-React-Fetching-Data-from-Open-Weather-Map-API.git
+
+Then, mpm start in your console. 
+
+</br></br>
