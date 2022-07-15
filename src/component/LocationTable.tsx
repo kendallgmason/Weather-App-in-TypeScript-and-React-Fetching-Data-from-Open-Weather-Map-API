@@ -2,6 +2,7 @@ import { WeatherLocation } from './model/Weather'
 import { FC } from 'react';
 
 
+
 interface LocationTableProps {
   locations: WeatherLocation[];
   current: WeatherLocation | null;

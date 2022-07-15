@@ -1,5 +1,6 @@
 import React, {FC, useEffect, useState} from "react";
 import {WeatherEntry} from "./WeatherEntry";
+import './WeatherSummary.css';
 import {Weather, WeatherLocation} from "./model/Weather";
 import {readForecast, readWeather} from "./services/WeatherService";
 
