@@ -1,38 +1,52 @@
-import React, {useState} from 'react';
+import {FC, useState} from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {LocationSearch} from "./component/LocationSearch";
+import {LocationTable} from "./component/LocationTable";
+import {WeatherLocation} from "./component/model/Weather";
+import {searchLocation} from "./component/services/WeatherService";
+import {ErrorAlert, WarningAlert} from "./component/Alerts";
+import {WeatherSummary} from "./component/WeatherSummary";
 
-function App() {
+const App: FC = () => {
+  const [locations, setLocations] = useState<WeatherLocation[]>([]);
+  const [error, setError] = useState('');
+  const [warning, setWarning] = useState('');
+  const [currentLocation, setCurrentLocation] = useState<WeatherLocation | null>(null);
 
-  const [LocationSearch, setLocationSearch] = useState('');
-  const [Locations, setLocations] = useState<string[]>([]);
-  const disableSearch = LocationSearch.trim() === '';
-  const addLocation = () => {
-  setLocations([LocationSearch, ...Locations]);
-  setLocationSearch('');
-};
+  const resetAlerts = () => {
+    setError('');
+    setWarning('');
+  }
+
+  let addLocation = async (term: string) => {
+    resetAlerts();
+    const location = await searchLocation(term);
+
+    if (!location) {
+      setError(`No location found called '${term}'`);
+    } else if (locations.find(item => item.id === location.id)) {
+      setWarning(`Location '${term}' is already in the list.`);
+    } else {
+      setLocations([location, ...locations]);
+    }
+  };
 
   return (
     <div className="container">
-    <h1>Weather App</h1>
-    <div>
-      <label>
-        Add Location
-        <input className="ml-1 mr-1" type="text" value={LocationSearch}
-               onChange={e => setLocationSearch(e.target.value)}/>
-      </label>
-      <button className="btn btn-primary"
-              onClick={addLocation} disabled={disableSearch}>Search</button>
-    </div>
+      <h1>Weather App</h1>
 
-    <div>
-      
+      <LocationSearch onSearch={addLocation}/>
+      <ErrorAlert message={error}/>
+      <WarningAlert message={warning}/>
+      <LocationTable locations={locations}
+                     current={currentLocation}
+                     onSelect={location => setCurrentLocation(location)}/>
+
+      <WeatherSummary location={currentLocation}/>
     </div>
-  </div>
   );
-}
-
-
-
+};
 
 export default App;
+
+
