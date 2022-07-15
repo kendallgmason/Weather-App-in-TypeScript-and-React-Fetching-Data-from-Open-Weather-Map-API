@@ -1,45 +1,34 @@
 import React, {useState} from 'react';
-import './App.css';
 
+// ...
 function App() {
-  const [locationSearch, setLocationSearch] = useState('');
-  const [locations, setLocations] = useState<string[]>([]);
-
-  const disableSearch = locationSearch.trim() === '';
-  const addLocation = () => {
-    setLocations([locationSearch, ...locations]);
-    setLocationSearch('');
-  };
-
+  const [locationSearch, setLocationSearch] = useState('Paris');
+  // ...
   return (
-    <div className="container">
-      <h1>Weather App</h1>
-      <div>
-        <label>
-          Add Location
-          <input className="ml-1 mr-1" type="text" value={locationSearch}
-                 onChange={e => setLocationSearch(e.target.value)}/>
-        </label>
-        <button className="btn btn-primary"
-                onClick={addLocation} disabled={disableSearch}>Search</button>
-      </div>
-
-      <div>
-        <h2>Locations</h2>
-        <table className="table table-hover">
-          <thead>
-          <tr>
-            <th>Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          {locations.map((location, index) =>
-            <tr key={index}><td>{location}</td></tr>
-          )}
-          </tbody>
-        </table>
-      </div>
+    <div>
+    <h1>Weather App</h1>
+    <div>
+      <label>
+        Add Location <input type="text" value="Paris"/>
+      </label>
+      <button>Search</button>
     </div>
+
+    <div>
+      <h2>Locations</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>Belfast</td></tr>
+        <tr><td>New York</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   );
 }
 
