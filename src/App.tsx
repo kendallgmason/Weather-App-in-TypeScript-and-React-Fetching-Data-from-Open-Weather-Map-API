@@ -26,19 +26,7 @@ function App() {
     </div>
 
     <div>
-      <h2>Locations</h2>
-      <table>
-      <thead>
-      <tr>
-        <th>Name</th>
-      </tr>
-      </thead>
-      <tbody>
-      {Locations.map((Location, index) =>
-        <tr key={index}><td>{Location}</td></tr>
-      )}
-      </tbody>
-    </table>
+      
     </div>
   </div>
   );
