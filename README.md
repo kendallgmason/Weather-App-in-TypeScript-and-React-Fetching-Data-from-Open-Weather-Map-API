@@ -6,7 +6,7 @@
 </br></br>
 
 
-### :white_check_mark: My Portfolio Website
+### :white_check_mark: Weather App in TypeScript and React
 
 Live Website: http://kendallweatherapp.netlify.app
 
